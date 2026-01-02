@@ -1,0 +1,284 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); 
+}
+
+/*   --First Portion --   */
+
+.head{
+    position: fixed;
+    z-index: 99;
+    height: 1.5rem;
+    width: 100%;
+    background-color: #1e1f29;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.head a{
+    font-size: 1rem;
+    border-left: solid gray .1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: azure;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .7s;
+}
+
+.head a:after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    background: red;
+    color: red;
+    transition: 300ms;
+}
+
+.head a:hover:after{
+    width: 100%;
+}
+
+.head a:hover{
+    border-left: solid red .1rem;
+    color: red;
+}
+
+@media screen and (max-width : 500px){
+    .head {
+        display: block;
+        flex-direction: column;
+        height: min-content;
+    }
+    .head a{
+        padding: 0;
+    }
+}
+
+
+
+
+/*  --Second Portion--  */
+
+
+.container{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container img{
+    height: 3.5rem;
+
+}
+
+#chk1{
+    display: none;
+}
+
+.container i{
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .logoname{
+    flex: 1;
+    color: #fff;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.container .search-box{
+    flex: 1;
+    position: relative;
+    width: 100%;
+   
+}
+
+.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: #fff;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    background: red;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+}
+
+.container .menu ul{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.container ul li{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.container ul li a{
+    transition: .7s;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+
+}
+
+.container ul li .wish{
+    margin-top: -25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    font-size: x-large;
+    transition: .7s;
+}
+
+.container ul li .cart{
+    margin-top: -25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    font-size: x-large;
+    transition: .7s;
+}
+
+.container .menu .bar{
+    font-size: 2.5rem;
+    display: none;
+}
+
+.container ul li a:after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: inline-block;
+    background: red;
+    color: red;
+    transition: 300ms;
+}
+
+.container ul li a:hover:after{
+    width: 100%;
+}
+
+.container ul li a:hover{
+    color: red;
+}
+
+.container ul li i:hover{
+    color: red;
+
+}
+
+@media screen and (max-width : 500px){
+
+    .container{
+        padding-top: 105px;
+
+    }
+}
+
+
+
+/*  table css */
+
+        
+        .admin-container {
+            width: 80%;
+            margin: auto;
+            padding-top:  200px;
+            margin-bottom: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: azure;
+            align-items: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #28a745;
+            color: white;
+        }
+        tr:hover {
+            background: #f1f1f1;
+        }
+        tr  a {
+            text-decoration: none;
+            border: 0.3px solid #dc3545;
+            padding: 6px 12px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .update-btn{
+            background: #007bff;
+        }
+        a[href*='delete'] {
+            background: #dc3545;
+        }
+        a:hover {
+            opacity: 0.8;
+        }
+        .update-btn:hover{
+            opacity: 0.8;
+        }
+        .update-btn{
+            text-decoration: none;
+            border: 0.3px solid #007bff;
+            padding: 6px 12px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+    

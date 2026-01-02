@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="thumbnails\mainlogo.png">
+    <link rel="stylesheet" href="phone1.css">
+    <title> TechFusion - Online Mobile Shopping Website </title>
+
+</head>
+<body>
+
+<!--First Portion-->
+
+    <header class="head">
+        <a href="login.php">Login</a>
+        <a href="Signup.php">Signup</a>
+        <a href="Account.php">Account</a>
+    </header>
+
+
+
+<!--Second Portion-->
+
+    <div class="container">
+            <div class="image"><img src="thumbnails\mainlogo.png" alt="Logo" ></div>
+
+            <div class="logoname"><h1>Tech Fusion</h1></div>
+
+            <div class="search-box">
+                <form action="">
+                    <input type="text" name="search" id="srch" placeholder="search">
+                    <button type="submit">  <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                
+            </div>
+
+
+            <div class="menu">
+                <ul class="navbar">
+                    <li class="home"><a href="index.php">Home</a></li>
+                    <li class="hotdeals"><a href="/index.php#carousel-body">Hot Deals</a></li>
+                    <li class="new"><a href="/index.php#mob-body" >New Phones</a></li>
+                    <li class="categories"><a href="/index.php#brand-body">Categories</a></li>
+                    <li class="accesories"><a href="/index.php#wrapper-body">Accesories</a></li>
+                    <li><div class="wish">
+                        <i class="fa-regular fa-heart"></i></div>
+                    </li>
+                    <li> <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i></div>
+                </li>
+                </ul>
+            
+            </div>    
+        </div>
+
+
+
+        <div class="box-body">
+            <div class="box">
+                <div class="left-side">
+                    <img src="All Phones/Vivo Y300 5G.jpg" alt="Mobile Image">
+                </div>
+                <div class="right-side">
+                    <h2>Vivo Y300 5G (Titanium Silver, 8GB RAM, 256GB Storage)</h2>
+                    <p style="color: red;"><strike>₹28,999</strike></p>
+                    <p>inclusive of all taxes</p>
+                    <p class="price"> ₹23,999</p>
+                    <div class="color-selection">
+                        <p>Select Color:</p>
+                        <label><input type="radio" name="color" value="black"> Black</label>
+                        <label><input type="radio" name="color" value="blue"> Blue</label>
+                        <label><input type="radio" name="color" value="red"> Red</label>
+                    </div>
+                    <div class="ram-selection">
+                        <p>Select RAM:</p>
+                        <label><input type="radio" name="ram" value="4gb"> 4GB</label>
+                        <label><input type="radio" name="ram" value="8gb"> 8GB</label>
+                        <label><input type="radio" name="ram" value="16gb"> 16GB</label>
+                    </div>
+                    <p class="info">16.94 cm (6.67" inch) FHD+ AMOLED display with a high screen-to-body ratio | 120Hz high refresh rate | Sunlight display of1800 nits
+                        Memory & SIM: 8GB RAM | 256GB internal memory; LPDDR4X | UFS 2.2</p>
+                    <div class="quantity-selection">
+                        <label for="quantity">No. of Items:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    </div>
+                    <div class="buttons">
+                        <button class="buy">Buy Now</button>
+                        <button class="fav">Add to Favourite</button>
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <!-- About Us Section -->
+                    <div class="col">
+                        <h5>About Us</h5>
+                        <p>We are a leading mobile shop offering the latest smartphones, accessories, and gadgets at competitive prices. Our mission is to provide exceptional service and quality products to our customers.</p>
+                    </div>
+        
+                    <!-- Terms and Contact Section -->
+                    <div class="col">
+                        <h5>Useful Links</h5>
+                        <ul>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="terms.php">Terms & Conditions</a></li>
+                            <li><a href="contact.php">Contact Us</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Additional Information -->
+                    <div class="col">
+                        <h5>Information</h5>
+                        <ul>
+                            <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                            <li><a href="faq.php">FAQs</a></li>
+                            <li><a href="support.php">Support</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="col">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Mobile Shop. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+</html>
